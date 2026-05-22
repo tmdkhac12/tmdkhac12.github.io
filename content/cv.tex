@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on March 12th, 2026
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Nguyen Khac Dong Quan} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/tmdkhac12}{\underline{github.com/tmdkhac12}} $  $
+    % \faIcon{code}
+    % \href{https://www.mattydoe.com}
+    % {\underline{mattydoe.com}} $  $
+    \faIcon{linkedin}
+    \href{https://linkedin.com/in/tmdkhac12}{\underline{linkedin.com/in/tmdkhac12}} $  $
+    \faIcon{envelope}
+    \href{mailto:quannguyen081204@gmail.com}
+    {\underline{quannguyen081204@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Sai Gon University}{September 2022 -- March 2027}
+      {Bachelor of Engineering in Information Technology}{Current GPA: 3.0/4.0}
+
+
+    % \subsection{Coursework}
+    %   \textbf{Courses:} Object-Oriented Programming, Data Structures \& Algorithms, Embedded Systems, Discrete Math, Linear Algebra, Calculus, Physics, Probability \& Statistics \\
+    %   \textbf{Awards:} Dean's Honor List (3x), AP Scholar with Distinction (2x), World Language History Award (Spanish)
+
+  \resumeSubHeadingListEnd 
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+    \textbf{Programming Languages}{: Java, JavaScript, Python, PHP, C/C++} \\
+    
+    \textbf{Web Technologies}{: HTML, CSS, RESTful APIs} \\
+    
+    \textbf{Frameworks}{: Spring Boot, Express.js, Django, React } \\
+    
+    \textbf{Databases}{: MySQL, MariaDB, Redis} \\
+    
+    \textbf{Tools}{: Git, GitHub, Docker, Linux, Bash } \\
+    
+    \textbf{Software Architecture}{: Layered Architecture, Monolithic Architecture} \\
+    
+    }}
+\end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Perfume Store Management} $|$ \footnotesize\emph{Java, Spring Boot, Spring Security, OAuth2, MySQL, Docker}}{February 2026 -- Present}
+            \resumeItemListStart
+            \resumeItem{Developing a backend system for an online perfume store to manage products, users, and orders.}
+            \resumeItem{Designed a modular backend architecture using domain-based modules and layered structure (Controller, Service, Repository, DTO, Mapper).}
+            \resumeItem{Implemented authentication and authorization using Spring Security with JWT and OAuth2 to secure RESTful APIs and application.}
+            \resumeItem{Integrated external services including VNPAY payment gateway and monitoring tools for application metrics.}
+            \resumeItemListEnd
+
+
+        \resumeProjectHeading
+            {\textbf{POS} $|$ \footnotesize\emph{ExpressJS, Socket.IO, EJS, RESTful APIs, Bootstrap 5, Git, Docker}}{May 2025 - August 2025}
+            \resumeItemListStart
+            \resumeItem{Developed a web-based Point of Sale (POS) system for a fast-food restaurant to manage customer orders and kitchen workflow.}
+            \resumeItem{Designed a modular backend architecture using ExpressJS with separated layers for controllers, routes, middleware, and database models.}
+            \resumeItem{Implemented RESTful APIs with versioning (v1, v2) and integrated Socket.IO to provide real-time order updates between customers, staff, and kitchen displays.}
+            \resumeItem{Built server-side rendered interfaces using EJS and Bootstrap for multiple roles including customers, staff, kitchen, and administrators.}
+            \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+            {\textbf{Nhat Minh Education Center} $|$ \footnotesize\emph{Math Tutor}\vspace{8pt}}{February 2025 -- August 2025}
+            {\small{Tutored middle school students in mathematics, helping them improve problem-solving skills and exam performance.}}
+            
+            \resumeProjectHeading
+            {\textbf{Computer Repair Services} $|$ \footnotesize\emph{Freelance Technician}\vspace{8pt}}{2023 -- Present}
+            {\small{Provided computer troubleshooting services including Windows installation, RAM upgrades, and diagnosing hardware and software issues.}}
+            
+            \resumeProjectHeading
+            {\textbf{Freelance Web Development} $|$ \footnotesize\emph{Frontend Developer}\vspace{8pt}}{2024 -- Present}
+            {\small{Developed static websites for small clients using HTML, CSS, and JavaScript based on their design and content requirements.}}
+
+        \subsection{Hobbies}
+          
+        \resumeProjectHeading
+            {\textbf{Reading Books}} \\
+            {\small{Regularly read books about psychology and communication to improve interpersonal and analytical thinking skills.}}
+            
+            \resumeProjectHeading
+            {\textbf{Playing Piano}} \\
+            {\small{Practice piano during free time as a hobby to relax and improve focus and discipline.}}
+          
+    \resumeSubHeadingListEnd 
+
+\end{document}
