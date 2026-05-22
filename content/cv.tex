@@ -91,6 +91,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeProjectHeadingTwo}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\[3pt]
+      \multicolumn{2}{l}{#3} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -129,13 +138,25 @@
     {\underline{quannguyen081204@gmail.com}}
 \end{center}
 
+% -------------------- OBJECTIVE --------------------
+\section{Objective}
+\small{Aspiring \textbf{Backend Developer} with a solid foundation in \textbf{Java / Spring Boot} and a focus on building high-performance, scalable systems. I am seeking a challenging internship where I can apply my expertise in \textbf{RESTful APIs}, \textbf{distributed databases}, and \textbf{AI integration} to deliver real business value. I possess a \textbf{strong sense of ownership}, a \textbf{results-oriented mindset}, and a proactive approach to technical problem-solving. Committed to continuous growth, I am eager to embrace complex challenges, learn from senior engineers, and contribute reliably to the success of an innovative engineering team.}
+
 % -------------------- EDUCATION --------------------
-\section{Education}
+\section{Education \& Certificates}
   \resumeSubHeadingListStart
   
+    \vspace{2pt}
+
     \resumeSubheading
       {Sai Gon University}{September 2022 -- March 2027}
       {Bachelor of Engineering in Information Technology}{Current GPA: 3.0/4.0}
+
+    \vspace{3pt}
+      
+    \resumeSubheading
+      {Aptis ESOL B2}{British Council (BC)}
+      {English Proficiency Certificate}{Achieved 2026}
 
 
     % \subsection{Coursework}
@@ -167,23 +188,30 @@
 % -------------------- PROJECTS --------------------
 \section{Projects}
     \resumeSubHeadingListStart
-        \resumeProjectHeading
-            {\textbf{Perfume Store Management} $|$ \footnotesize\emph{Java, Spring Boot, Spring Security, OAuth2, MySQL, Docker}}{February 2026 -- Present}
-            \resumeItemListStart
-            \resumeItem{Developing a backend system for an online perfume store to manage products, users, and orders.}
-            \resumeItem{Designed a modular backend architecture using domain-based modules and layered structure (Controller, Service, Repository, DTO, Mapper).}
-            \resumeItem{Implemented authentication and authorization using Spring Security with JWT and OAuth2 to secure RESTful APIs and application.}
-            \resumeItem{Integrated external services including VNPAY payment gateway and monitoring tools for application metrics.}
+        \resumeProjectHeadingTwo
+          {\textbf{Perfume Store Management} $|$ Team size: 1 $|$ \href{https://github.com/tmdkhac12/perfume-store-react-springboot}{\faIcon{github} \underline{Github Repository}} } 
+          {February 2026 -- Present} 
+          {\textit{\small \hspace{4pt} Technologies: Java, ReactJS, Spring Boot, Spring Security, OAuth2, Spring AI, MySQL, Docker, VNPay, JWT}}
+          
+          \resumeItemListStart
+            \resumeItem{Built a \textbf{RAG-based AI consultant} with \textbf{Spring AI}, local embeddings (\textbf{Ollama}) at 0 USD embedding cost, and \textbf{Qdrant}, with \textbf{event-driven vector sync} after MySQL commit.}
+            \resumeItem{Implemented \textbf{VNPay v2.1} payments using \textbf{HMAC-SHA512} signing, \textbf{4-step IPN webhook validation}, and \textbf{repay flow} for failed/expired orders.}
+            \resumeItem{Integrated an \textbf{automated email service} using \textbf{Spring Boot Mail} and \textbf{Thymeleaf}; implemented \textbf{asynchronous processing} to send order confirmations and electronic invoices without blocking the checkout flow.}
+            \resumeItem{Designed a \textbf{modular monolith} (Auth, Perfume, Invoice, Assistant) with layered structure; \textbf{reduced N+1 queries} to 1-2 using \textbf{EntityGraph} and \textbf{BatchSize}.}
+            \resumeItem{Implemented \textbf{dynamic catalog filters} with \textbf{JPA Specifications} and @Formula min-price sorting; delivered \textbf{JWT/OAuth2 auth} with \textbf{account linking} and \textbf{HttpOnly cookie}.}
             \resumeItemListEnd
 
 
-        \resumeProjectHeading
-            {\textbf{POS} $|$ \footnotesize\emph{ExpressJS, Socket.IO, EJS, RESTful APIs, Bootstrap 5, Git, Docker}}{May 2025 - August 2025}
-            \resumeItemListStart
-            \resumeItem{Developed a web-based Point of Sale (POS) system for a fast-food restaurant to manage customer orders and kitchen workflow.}
-            \resumeItem{Designed a modular backend architecture using ExpressJS with separated layers for controllers, routes, middleware, and database models.}
-            \resumeItem{Implemented RESTful APIs with versioning (v1, v2) and integrated Socket.IO to provide real-time order updates between customers, staff, and kitchen displays.}
-            \resumeItem{Built server-side rendered interfaces using EJS and Bootstrap for multiple roles including customers, staff, kitchen, and administrators.}
+        \resumeProjectHeadingTwo
+          {\textbf{POS} $|$ Team size: 1 $|$ \href{https://github.com/tmdkhac12/POS}{\faIcon{github} \underline{Github Repository}}  }
+          {May 2025 -- August 2025} 
+          {\textit{\small \hspace{4pt}  Technologies: JavaScript, Node.js, Express.js, Socket.IO, EJS, RESTful APIs, Bootstrap 5,  Docker, Git}}
+
+          \resumeItemListStart
+            \resumeItem{Developed a web-based \textbf{Point of Sale (POS)} system for a fast-food restaurant to manage customer orders and kitchen workflow.}
+            \resumeItem{Designed a \textbf{modular backend architecture} using \textbf{ExpressJS} with separated layers for controllers, routes, middleware, and database models.}
+            \resumeItem{Implemented \textbf{RESTful APIs} with versioning (v1, v2) and integrated \textbf{Socket.IO} to provide \textbf{real-time order updates} between customers, staff, and kitchen displays.}
+            \resumeItem{Built \textbf{server-side rendered} interfaces using \textbf{EJS} and \textbf{Bootstrap} for multiple roles including customers, staff, kitchen, and administrators.}
             \resumeItemListEnd
           
     \resumeSubHeadingListEnd
@@ -203,17 +231,7 @@
             \resumeProjectHeading
             {\textbf{Freelance Web Development} $|$ \footnotesize\emph{Frontend Developer}\vspace{8pt}}{2024 -- Present}
             {\small{Developed static websites for small clients using HTML, CSS, and JavaScript based on their design and content requirements.}}
-
-        \subsection{Hobbies}
           
-        \resumeProjectHeading
-            {\textbf{Reading Books}} \\
-            {\small{Regularly read books about psychology and communication to improve interpersonal and analytical thinking skills.}}
-            
-            \resumeProjectHeading
-            {\textbf{Playing Piano}} \\
-            {\small{Practice piano during free time as a hobby to relax and improve focus and discipline.}}
-          
-    \resumeSubHeadingListEnd 
+  \resumeSubHeadingListEnd 
 
 \end{document}
