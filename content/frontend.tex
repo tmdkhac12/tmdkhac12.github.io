@@ -1,0 +1,276 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeadingTwo}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\[3pt]
+      \multicolumn{2}{l}{#3} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+  \textbf{\Huge \scshape Nguyen Khac Dong Quan} \\ \vspace{4pt}
+  \small \textbf{Frontend Developer Intern} \\ \vspace{4pt}
+  \small
+  \faIcon{envelope} \href{mailto:quannguyen081204@gmail.com}{\underline{quannguyen081204@gmail.com}} $|$
+  \faIcon{phone} (+84) 0988 33 9801 $|$
+  \faIcon{map-marker-alt} Ho Chi Minh City, Vietnam \\ \vspace{4pt}
+  \faIcon{globe} \href{https://tmdkhac12.github.io/}{\underline{tmdkhac12.github.io}} $|$
+  \faIcon{github} \href{https://github.com/tmdkhac12}{\underline{github.com/tmdkhac12}} $|$
+  \faIcon{linkedin} \href{https://linkedin.com/in/tmdkhac12}{\underline{linkedin.com/in/tmdkhac12}}
+\end{center}
+
+% -------------------- OBJECTIVE --------------------
+\section{Objective}
+\small{[Position] with experience developing [type of systems/projects] using [core stack].
+  Short-term goal is to improve [specific technical area] and transition into a [target role] within [timeframe].
+  Seeking an opportunity at [Company Name] to apply technical skills, learn from experienced developers, and contribute effectively to real-world software projects.}
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+
+        \textbf{Programming Languages}{: JavaScript (ES6+), HTML5, CSS3} \\
+
+        \textbf{Frameworks \& Libraries}{: React 18, Tailwind CSS, Bootstrap 5, React Router, EJS, Socket.IO (Client)} \\
+
+        \textbf{State \& Communication}{: Context API, Custom Hooks, Axios (Interceptors), LocalStorage, RESTful API Integration} \\
+
+        \textbf{UI/UX \& Design}{: Responsive Design, Mobile-First, Flexbox/Grid, Glassmorphism, React Markdown} \\
+
+        \textbf{Tools \& Productivity}{: Vite, Git, GitHub, Gemini CLI, GitHub Copilot, Context/Token Management, Prompt Engineering, Stitch (UI)} \\
+
+        }}
+\end{itemize}
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeadingTwo
+{\textbf{Perfume Store Management} $|$ Team size: 1 $|$ \href{https://github.com/tmdkhac12/perfume-store-react-springboot}{\faIcon{github} \underline{GitHub Repository}} }
+{February 2026 -- Present}
+{\textit{\small \hspace{4pt} Technologies: React 18, Tailwind CSS, React Router, Axios, Context API, Custom Hooks, React Markdown}}
+
+\resumeItemListStart
+\resumeItem{Developed a \textbf{responsive, luxury-style UI} using \textbf{React 18} and \textbf{Tailwind CSS},
+  focusing on visual consistency and fast rendering through \textbf{Vite's build system}.}
+\resumeItem{Built \textbf{custom hooks} (e.g., \textit{useConsultation}) to manage complex states for the AI
+  Chatbot, reducing code duplication and making the logic easier to maintain.}
+\resumeItem{Integrated \textbf{React Markdown} to render AI responses with rich formatting and dynamic product
+  links, improving the clarity of the consultation process.}
+\resumeItem{Implemented \textbf{Axios Interceptors} to automate \textbf{JWT token handling}, ensuring secure and
+  seamless sessions without manual header management for every request.}
+\resumeItem{Engineered \textbf{manual cart persistence} using \textbf{LocalStorage}, ensuring user selections are
+  preserved across page refreshes and browser sessions.}
+\resumeItemListEnd
+
+\resumeProjectHeadingTwo
+{\textbf{Smart Restaurant POS} $|$ \href{https://github.com/tmdkhac12/POS}{\faIcon{github} \underline{GitHub
+      Repository}}}
+{May 2025 -- Aug 2025}
+{\textit{\small Technologies: Vanilla JS, Socket.IO, EJS, Bootstrap 5, CSS3 Grid/Flexbox}}
+
+\resumeItemListStart
+\resumeItem{Built a \textbf{mobile-first QR ordering interface}, streamlining the customer journey and reducing
+  the need for staff to take orders manually at the table.}
+\resumeItem{Implemented \textbf{real-time synchronization} using \textbf{Socket.IO}, ensuring that kitchen and
+  staff screens update immediately when a new order is placed.}
+\resumeItem{Structured the UI with \textbf{component-based EJS templates}, which simplified the development and
+  maintenance of shared layouts like navbars and sidebars.}
+\resumeItem{Organized \textbf{dynamic menu assets by category} using Vanilla JS, allowing for quick filtering and
+  a smoother navigation experience for customers.}
+\resumeItem{Applied \textbf{Bootstrap 5} and \textbf{CSS Flexbox/Grid} to ensure the system remains fully
+  functional and readable on various devices, from tablets to smartphones.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Nhat Minh Education Center}{Feb 2025 -- Aug 2025}
+{Math Tutor}{Ho Chi Minh City, Vietnam}
+\resumeItemListStart
+\resumeItem{Successfully mentored \textbf{10+ students}, significantly boosting academic results: \textbf{3 students jumped from failing grades (3-4) to excellence (9+)}, while others improved from 5-6 to 8+.}
+\resumeItem{Tailored teaching methods to individual learning styles, demonstrating strong \textbf{patience, communication}, and \textbf{result-oriented mentorship}.}
+\resumeItemListEnd
+
+\newpage % Ép xuống trang mới chủ động
+\vspace*{20pt} % Tạo khoảng trống 20pt ở đầu trang mới
+\resumeSubheading
+{Freelance Web Development}{Jan 2024 -- Present}
+{Frontend Developer}{Ho Chi Minh City, Vietnam}
+\resumeItemListStart
+\resumeItem{Developed \textbf{5+ customized static web solutions} using \textbf{HTML, CSS, and JavaScript} based on specific academic project requirements for university students.}
+\resumeItem{Ensured \textbf{100\% adherence to technical specifications} and design handoffs, delivering clean and maintainable code for various educational modules.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Computer Repair Services}{Jan 2023 -- Present}
+{Freelance Technician}{Ho Chi Minh City, Vietnam}
+\resumeItemListStart
+\resumeItem{Resolved \textbf{20+ hardware and software cases} with high client satisfaction; performed Windows installations, RAM upgrades, and system troubleshooting.}
+\resumeItem{Built a reputation for \textbf{reliable technical support} and quick problem diagnosis for individual clients in the local area.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+\resumeSubHeadingListStart
+
+\vspace{2pt}
+
+\resumeSubheading
+{Sai Gon University}{Sep 2022 -- Mar 2027}
+{Bachelor of Engineering in Information Technology}{Current GPA: 3.0/4.0}
+
+
+% \subsection{Coursework}
+%   \textbf{Courses:} Object-Oriented Programming, Data Structures \& Algorithms, Embedded Systems, Discrete Math, Linear Algebra, Calculus, Physics, Probability \& Statistics \\
+%   \textbf{Awards:} Dean's Honor List (3x), AP Scholar with Distinction (2x), World Language History Award (Spanish)
+
+\resumeSubHeadingListEnd
+
+% -------------------- CERTIFICATES --------------------
+\section{Certificates}
+\resumeSubHeadingListStart
+
+\vspace{2pt}
+
+\resumeSubheading
+{Aptis ESOL B2}{Mar 2026}
+{English Proficiency Certificate}{British Council (BC)}
+
+\resumeSubHeadingListEnd
+
+% -------------------- HOBBIES --------------------
+\section{Hobbies}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Reading Books}} \\
+{\small{Regularly read books about psychology and communication to improve interpersonal and analytical thinking skills.}}
+
+\resumeProjectHeading
+{\textbf{Playing Piano}} \\
+{\small{Practice piano during free time as a hobby to relax and improve focus and discipline.}}
+\resumeSubHeadingListEnd
+
+\end{document}
